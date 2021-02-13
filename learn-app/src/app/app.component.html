@@ -2,6 +2,8 @@
 <p>Learn {{ course }} with me.</p>
 <button (click)="goBack()">Button</button>
 
+<app-basic-form> </app-basic-form>
+
 <div *ngIf="courses">
   <h2>{{ courses.name | uppercase }} details</h2>
   <p>ID:{{ courses.id }}</p>
