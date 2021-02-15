@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # learn_angular_cli
 
 - To install Angular CLI 
@@ -91,8 +91,4 @@ ng e2e
 ```bash
 ng eject
 ```
-=======
-# learn_angular
 
-https://www.youtube.com/watch?v=JeeUY6WaXiA
->>>>>>> b1e83aea2f3684db6b700e4c6fe0ff48d61eb683

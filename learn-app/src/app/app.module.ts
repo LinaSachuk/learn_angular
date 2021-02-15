@@ -8,6 +8,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatSliderModule } from '@angular/material/slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -37,6 +38,7 @@ import { ValidFormComponent } from './valid-form/valid-form.component';
     MatSelectModule,
     MatCheckboxModule,
     MatChipsModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent],
