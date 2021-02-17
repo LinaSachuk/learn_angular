@@ -12,6 +12,7 @@
       *ngFor="let phone of phoneForms.controls; let i = index"
       [formGroupName]="i"
     >
+      <p>Area Field Value: {{ myForm.value.phones[i].area }}</p>
       <mat-form-field>
         <input matInput placeholder="area" formControlName="area" />
       </mat-form-field>
