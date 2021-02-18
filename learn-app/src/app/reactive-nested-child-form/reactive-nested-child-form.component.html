@@ -1,13 +1,16 @@
-<p>Reactive Nested Child Form</p>
-<form [formGroup]="parentForm">
-  <div formGroupName="nestedForm">
-    <div>
-      <label for="complement1">Nested input 1</label>
-      <input type="text" formControlName="complement1" />
+<div id="nestedForm">
+  <h3>Reactive Nested Child Form</h3>
+  <p>Test</p>
+  <form [formGroup]="parentForm">
+    <div formGroupName="nestedForm">
+      <div>
+        <label for="complement1">Nested input 1</label>
+        <input type="text" formControlName="complement1" />
+      </div>
+      <div>
+        <label for="complement2">Nested input 2</label>
+        <input type="text" formControlName="complement2" />
+      </div>
     </div>
-    <div>
-      <label for="complement1">Nested input 1</label>
-      <input type="text" formControlName="complement2" />
-    </div>
-  </div>
-</form>
+  </form>
+</div>

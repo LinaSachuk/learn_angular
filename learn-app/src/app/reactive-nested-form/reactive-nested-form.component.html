@@ -1,12 +1,16 @@
-<h1>Reactive Nested Form</h1>
-<br />
-<form [formGroup]="bigForm" (ngSubmit)="submit()">
-  <div>
-    <label for="username">Root Input</label>
-    <input type="text" id="username" formControlName="username" />
+<body>
+  <div id="form">
+    <h1>Reactive Nested Form</h1>
+    <br />
+    <form [formGroup]="bigForm" (ngSubmit)="submit()">
+      <div>
+        <label for="username">Root Input</label>
+        <input type="text" id="username" formControlName="username" />
+      </div>
+      <app-reactive-nested-child-form
+        [parentForm]="bigForm"
+      ></app-reactive-nested-child-form>
+      <button>Send</button>
+    </form>
   </div>
-  <app-reactive-nested-child-form
-    [parentForm]="bigForm"
-  ></app-reactive-nested-child-form>
-  <button>Send</button>
-</form>
+</body>
