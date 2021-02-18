@@ -1,11 +1,21 @@
+<app-submit-form></app-submit-form>
+<br />
+
+<app-basic-form> </app-basic-form>
+<br />
+
+<app-nested-form> </app-nested-form>
+<br />
+
+<app-array-form> </app-array-form>
+<br />
+
+<app-valid-form> </app-valid-form>
+<br />
+
 {{ title }}
 <p>Learn {{ course }} with me.</p>
 <button (click)="goBack()">Button</button>
-
-<app-basic-form> </app-basic-form>
-<app-nested-form> </app-nested-form>
-<app-array-form> </app-array-form>
-<app-valid-form> </app-valid-form>
 
 <div *ngIf="courses">
   <h2>{{ courses.name | uppercase }} details</h2>

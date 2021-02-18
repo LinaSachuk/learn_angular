@@ -1,1 +1,17 @@
-<p>submit-form works!</p>
+<div id="form">
+  <h1>Submit Form</h1>
+
+  <h2>Personal Information</h2>
+  <label>
+    First Name:
+    <input type="text" placeholder="required" />
+  </label>
+  <label>
+    Phone Number:
+    <input type="text" placeholder="required" />
+  </label>
+  <label>Select Preferred Location:</label>
+  <select>
+    <option *ngFor="let loc of locations" [ngValue]="loc">{{ loc }}</option>
+  </select>
+</div>
