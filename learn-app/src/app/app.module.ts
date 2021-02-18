@@ -17,6 +17,8 @@ import { BasicFormComponent } from './basic-form/basic-form.component';
 import { NestedFormComponent } from './nested-form/nested-form.component';
 import { SubmitFormComponent } from './submit-form/submit-form.component';
 import { ValidFormComponent } from './valid-form/valid-form.component';
+import { ReactiveNestedFormComponent } from './reactive-nested-form/reactive-nested-form.component';
+import { ReactiveNestedChildFormComponent } from './reactive-nested-child-form/reactive-nested-child-form.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { ValidFormComponent } from './valid-form/valid-form.component';
     NestedFormComponent,
     SubmitFormComponent,
     ValidFormComponent,
+    ReactiveNestedFormComponent,
+    ReactiveNestedChildFormComponent,
   ],
   imports: [
     BrowserModule,

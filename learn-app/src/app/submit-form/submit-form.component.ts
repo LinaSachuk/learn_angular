@@ -59,3 +59,10 @@ export class SubmitFormComponent implements OnInit {
     return this.volunteerForm.get('references') as FormArray;
   }
 }
+
+// onSubmit() {
+//     const formValue = Object.assign({}, this.packageForm.value, {
+//       selectedServices:  this.getSelectedServices()
+//     });
+//     console.log(formValue);
+// }
