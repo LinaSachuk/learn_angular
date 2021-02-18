@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormArray } from '@angular/forms';
+//Built a Reactive Form with the @angular/forms building blocks:
+// 1. FormControl
+// 2. FormGroup
+// 3. FormArray for Dynamic Forms
 
+// Updated a control programmatically
+
+// Ability to add/remove controls dynamically in a FormArray
 @Component({
   selector: 'app-submit-form',
   templateUrl: './submit-form.component.html',
@@ -32,6 +39,20 @@ export class SubmitFormComponent implements OnInit {
 
   onSubmit(): void {
     console.log(this.volunteerForm);
+  }
+
+  selectLocation(event): void {
+    this.volunteerForm.patchValue({
+      preferredLocation: event.target.value,
+    });
+  }
+
+  addEmail(): void {
+    this.references.push(this.fb.control(''));
+  }
+
+  removeEmail(index: number): void {
+    this.references.removeAt(index);
   }
 
   get references(): FormArray {
