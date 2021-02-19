@@ -4,13 +4,15 @@
     <br />
     <form [formGroup]="bigForm" (ngSubmit)="submit()">
       <div>
+        <h3>Parent Form</h3>
+        <br />
         <label for="username">Root Input</label>
         <input type="text" id="username" formControlName="username" />
       </div>
       <app-reactive-nested-child-form
         [parentForm]="bigForm"
       ></app-reactive-nested-child-form>
-      <button>Send</button>
+      <button>Submit</button>
     </form>
   </div>
 </body>

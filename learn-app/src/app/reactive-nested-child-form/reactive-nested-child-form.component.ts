@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-
+import { ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app-reactive-nested-child-form',
   templateUrl: './reactive-nested-child-form.component.html',

@@ -1,8 +1,5 @@
 #nestedForm {
-  border: 5px dotted rgb(134, 17, 114);
-  padding: 2%;
-  margin: 1%;
-}
-input {
-  margin: 1%;
+  border: 2px dotted rgb(134, 17, 114);
+  padding: 13%;
+  margin: 5%;
 }

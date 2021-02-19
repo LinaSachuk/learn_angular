@@ -41,80 +41,68 @@ body {
   border-top: 10px solid var(--form-border);
 }
 
-label,
-input,
-textarea,
-app-reactive-nested-child-form.input {
+:host ::ng-deep label,
+:host ::ng-deep input,
+textarea {
   display: block;
   width: 100%;
   font-size: var(--font-size);
-  line-height: var(--font-size * 2);
   font-family: var(--font-face);
 }
 
-/*
+:host ::ng-deep input {
+  margin: 2%;
+  padding: 2%;
+  border: none;
+  border: 2px solid rgba(177, 12, 12, 0.1);
+  border-radius: 2px;
+  background: --form-bg;
+  padding-left: 5px;
+  outline: none;
+}
 
+:host ::ng-deep h3 {
+  font-weight: normal;
+  font-size: 10pt;
+  line-height: var(--font-size) * 2;
+  font-style: italic;
+  margin: 0 0 0.5em 0;
+}
 
+:host ::ng-deep input:focus,
+:host ::ng-deep textarea:focus {
+  border: 1px solid var(--form-focus);
+}
 
-input
-  margin-bottom: --font-size * 2
+textarea {
+  resize: none;
+}
 
-h3
-  font-weight: normal
-  font-size: 10pt
-  line-height: --font-size * 2
-  font-style: italic
-  margin: 0 0 .5em 0
+button {
+  display: block;
+  float: right;
+  line-height: var(--font-size) * 2;
+  padding: 0 20px;
+  border: none;
+  background: var(--form-border);
+  color: white;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  border-bottom: 2px solid transparent;
+  outline: none;
+}
+button:hover {
+  background: inherit;
+  color: var(--form-border);
+  border-bottom: 2px solid var(--form-border);
+}
 
-span
-  font-size: 8pt
+button::selection {
+  background: rgb(255, 199, 184);
+}
 
-em
-  color: --form-border
-  font-weight: bold
-
-input, textarea
-  border: none
-  border: 1px solid rgba(0,0,0,.1)
-  border-radius: 2px
-  background: --form-bg
-  padding-left: 5px
-  outline: none
-
-input:focus, textarea:focus
-  border: 1px solid --form-focus
-
-textarea
-  resize: none
-
-button
-  display: block
-  float: right
-  line-height: --font-size * 2
-  padding: 0 20px
-  border: none
-  background: --form-border
-  color: white
-  letter-spacing: 2px
-  transition: .2s all ease-in-out
-  border-bottom: 2px solid transparent
-  outline: none
-
-  &:hover
-    background: inherit
-    color: --form-border
-    border-bottom: 2px solid --form-border
-
-::selection
-  background: rgb(255, 199, 184)
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus
-  border: 1px solid --form-focus
-  -webkit-text-fill-color: --font-color
-  -webkit-box-shadow: 0 0 0px 1000px --form-bg inset
-  transition: background-color 5000s ease-in-out 0s */
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
